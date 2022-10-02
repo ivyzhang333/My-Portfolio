@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.nav-logo img {
+  width: 90px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li {
+  /* padding: 8px 15px; */
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+nav ul li a {
+  /* remove link underscore */
+  text-decoration: none;
+  color: #333;
+}
+
+/* add hover effect(when mouse move on it) */
+nav ul li:hover {
+  background-color: #fcb212;
+  color: #fff;
+  padding: 4px;
+}
+
+/* media query for desktop */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
+  nav ul li {
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    padding-bottom: 6px;
+  }
+}
